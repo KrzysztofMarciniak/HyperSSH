@@ -172,26 +172,26 @@ return count == 4;
 
   int main() {
     banner();
-    int choise;  
+    int choice;  
 
     std::cout << std::endl << "Pick one" << std::endl;
     std::cout << "[1] connect via SSH" << std::endl;
     std::cout << "[2] edit servers.yaml (config)" << std::endl;
     std::cout << "[0] exit" << std::endl;
 
-    std::cin >> choise;
+    std::cin >> choice;
     std::cin.ignore(10000, '\n');
 
-    if(choise == 1) {
+    if(choice == 1) {
       connect();
 
     }
 
-    else if (choise == 2) {
+    else if (choice == 2) {
      first_time();
     }
 
-    else if (choise == 0) {
+    else if (choice == 0) {
       std::cout << "exiting..." << std::endl;
       return 0;
     }
